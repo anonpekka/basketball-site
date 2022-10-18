@@ -1,0 +1,112 @@
+
+/* Here fonts */
+@font-face {
+    font-family: lucky;
+    src: url("fonts/LuckiestGuy.ttf");
+}
+@font-face {
+    font-family: lcd;
+    src: url("fonts/LCD14Condensed.otf");
+}
+@font-face {
+    font-family: cursed;
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+
+/* Body element */
+body {
+    margin: auto;
+    background-color: #001d3d;
+}
+
+/* Here Top Portion of the Page */
+
+.top-portion {
+    display: flex;
+    justify-content: space-around;
+}
+/* Heading Part */
+.home, .guest {
+    text-shadow: 1px 0 20px #fcba04;
+    font-family: lucky;
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-indent: 5px;
+}
+
+/* Certer Porttion */
+.center-portion {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.LCD {
+    font-family: lcd;
+    font-weight: 500;
+    font-size: 4.5rem;
+    text-indent: 5px;
+    background-color: #000000;
+    width: 250px;
+    height: 250px;
+    color: #bf0603;
+    text-shadow: 0 0 7px #38040e;
+    text-align: center;
+    border: 10px solid #0b3954;
+    border-radius: 30px;
+    
+}
+
+/* Buttons are Here */
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    /* background-color: #001d3d; */
+    background-image: url("images/ball.png");
+    background-size: cover;
+    border-radius: 30px;
+    font-weight: 800;
+}
+.button:active {
+    /* background-color: #1368aa; */
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* New Game Button */
+
+.new-game {
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 3px solid black;
+    font-family: cursed;
+    font-weight: 600;
+}
+.new-game:active {
+    background-color: #a50104;
+}
+
